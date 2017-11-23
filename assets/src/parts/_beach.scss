@@ -1,0 +1,121 @@
+.beach {
+
+	height: 90vh;
+	/* height: 710px; */
+	width: 100%;
+	/* width: 1300px; */
+
+	@include flexcol();
+	justify-content: space-between;
+	align-items: center;
+
+	
+	background: url('../src/images/beach.svg') no-repeat center;
+	background-size: cover;
+
+	.header {
+			@include flexrow();
+			justify-content: space-between;
+			align-items: center;
+			max-width: 1170px;
+			
+
+		&__logo {
+
+			
+			margin-top: 3%;
+			width: 113px;
+			height: 19px;
+		}
+/* 		&__logo:hover {
+	fill: '$mainProjectColor';
+
+} */
+
+
+		&__menu {
+
+			width: 60%;
+			margin-top: 3%;
+			@include flexrow();
+			justify-content: flex-end;
+
+
+			.navigation {
+				@include flexrow();
+				justify-content: flex-end;
+				align-items: baseline;
+				width: 50%;
+				&__item {
+					width: 300px;
+					height: 13px;
+					color: #ffffff;
+					font-family: $font-Open;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 12px;
+					margin-left: 70px;
+
+
+				}
+
+
+			}
+		}
+	}
+	&__content {
+
+			@include flexcol();
+		    justify-content: center;
+    		align-items: center;
+    		width: 100%;
+		.beach__title {
+			display: inline-block;
+			width: 100%;
+			
+			height: 23px;
+			color: #ffffff;
+			font-family: $font-Source;
+			font-size: 35px;
+			font-weight: 300;
+			line-height: 70px;
+			text-transform: uppercase;
+			letter-spacing: 7px;
+			text-align: center;
+			padding-bottom: 8%;
+
+		}
+		.beach__text {
+			display: inline-block;
+			width: 50%;
+			
+			height: 45px;
+			color: #ffffff;
+			font-family: $font-Open;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 28px;
+			letter-spacing: 0.8px;
+			text-align: center;
+		
+		}
+	}
+	&__button {
+		width: 36px;
+		height: 36px;
+		background-color: $mainProjectColor;
+		border: none;
+		border-radius: 50%;
+		margin-bottom: 1%;
+		.beach__button--image {
+				width: 12px;
+				height: 7px;
+				background-color: inherit;
+		}
+	}
+	&__button:hover {
+		background-color: #FA8258;
+
+	}
+
+}

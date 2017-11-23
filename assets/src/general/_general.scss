@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	/* height: 100vh; */
+	max-height: 710px;
+	width: 100%;
+	
+}
+
+.wrap-container {
+
+	/* max-height: 710px; */
+	max-width: 1300px;
+	margin: 0 auto;
+
+} 
+	
+ul {
+	
+	margin: 0;
+	padding-left: 0;
+	list-style: none; 
+}
+
+a {
+	
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: #19bd9a;
+}
+
+
+img {
+
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.active {
+	visibility: visible;
+}
+
+.slider-container {
+
+	height: 100vh;
+	width: 100%;
+	@include flexrow();
+	justify-content: space-between;
+	align-items: center;
+
+}
+.slides {
+	height: 100vh;
+	width: 100%;
+	@include flexrow();
+	justify-content: space-between;
+	align-items: center;
+}
+
+	.buttons {
+		@include flexrow();
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-top: 5%;
+		}
+
+	.slide-nav {
+				@include flexrow();
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+ 		 list-style: none;
+ 		 padding: 10%; 
+ 		}
+  			
+  		.slide-nav__item {
+  			width: 10px;
+  			height: 10px;
+  			margin: 0 7px;
+  			border-radius: 50%;
+  			border: 1px solid $mainProjectColor;
+  			background-color: white;  			
+  			transition: all .3s ease;
+  		}
+
+
+
+  		.activeButton {
+  			background-color: $mainProjectColor;
+  		}
+
+
+

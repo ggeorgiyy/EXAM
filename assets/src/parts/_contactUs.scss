@@ -1,0 +1,38 @@
+.contactUs {
+	width: 100%;
+	height: 25vh;
+	@include flexcol();
+	justify-content: center;
+	align-items: center;
+	background-image: url('../src/images/layer.svg') no-repeat center;
+	background-size: cover;
+	background-color: #000000;
+
+	
+	&__title {
+		color: #ffffff;
+		font-family: $font-Open;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0.8px;
+		margin-bottom: 3%;
+	}
+	&__button {
+		width: 140px;
+		height: 37px;
+		border-radius: 19px;
+		border: 1px solid #ffffff;
+		opacity: 0.8;
+		color: #ffffff;
+		font-family: $font-Open;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 12px;
+		background-image: none; 
+        background-color: transparent;
+		
+		
+	}
+
+}

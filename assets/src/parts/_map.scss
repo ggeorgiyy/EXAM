@@ -1,0 +1,24 @@
+.map {
+	@extend .team;
+	height: 120vh;
+	&__header {
+		@extend .portfolio__header;
+		height: 20vh;
+		.map__title {
+			@extend .portfolio__title;
+
+		}
+		.map__text {
+			@extend .portfolio__text;
+
+		}
+
+	}
+
+	&__item {
+		height: 70vh;
+		width: 100%;
+	}
+
+	
+}
